@@ -1,7 +1,10 @@
 #coding:utf8
-#import GaussCal
+from GaussCal import gausscal
+from __builtin__ import int
 print("1～nまでの和で求めたい範囲を指定してください。")
-n = raw_input()
-int(n)
-print "1から%dまでのすべての和は、%" % n
+input_num = raw_input()
+
+sum = gausscal(int(input_num))
+
+print "1から%sまでのすべての和は、%dです" % (input_num,sum)
 
